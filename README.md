@@ -1,9 +1,9 @@
 # Image_Classifier
 An educational deep learning project. The goal is to develop a generalizable neural network architecute capable of accuratley distinguishing image classes. The network is capable of identifying Iris flowers, among a dataset containing 102 flower categories, with at least 80% accuracy. 
 
-## For the first part of this project, I used deep learning methods to create an image classifier in a Jupyter notebook. See "Image Classifier Project.ipynb". 
+## Part 1: Use deep learning to create image classifier
 
-I completed the following tasks:
+In the "Image Classifier Project.ipynb" Jupyter notebook, I completed the following tasks:
 1. Loaded and preprocessed image data
 2. Created image classification neural network layer, and attached layer to transfer model
 3. Created training function using an early-stopping decision rule
@@ -13,7 +13,7 @@ I completed the following tasks:
 
 The model was trained using a negative log likelihood loss metric (i.e. maximum likelihood). Model testing performance was evaluated using accuracy.
 
-## For the second part of this project, I generalized the neural network classification model for use with any image dataset and implemented its functionality in two command line applications. 
+## Part 2: Generalize the neural network classification model for use with any image dataset and implement its functionality in two command line applications
 
 #### First application: train.py
 The first application creates and trains an image classification neural network and includes options to adjust the network architecture and hyperparameters. To open the application, run "train.py" in the terminal.
