@@ -27,7 +27,7 @@ args = parser.parse_args()
 # set computation device
 device = torch.device('cuda' if args.gpu and torch.cuda.is_available() else 'cpu')
 
-Print(f'Training {args.arch}-based neural network with feedforward classifier containing {*args.layers} hidden units for {args.epochs} epochs to predict {args.classes} classes. Computations will be completed using {device}. Adam optimization will use learning rate {args.learn_rate}.
+Print(f'Training {args.arch}-based neural network with feedforward classifier containing {zip(*args.layers)} hidden units for {args.epochs} epochs to predict {args.classes} classes. Computations will be completed using {device}. Adam optimization will use learning rate {args.learn_rate}.')
       
 # Define your transforms for the training, validation, and testing sets
 def process_data(train_dir, valid_dir=None, batch_size=100):
