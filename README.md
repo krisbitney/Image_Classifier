@@ -71,7 +71,8 @@ optional arguments:
                         values to category names
 ```
                      
- ## Required libraries                       
+## Required libraries                       
 This project uses PyTorch, Numpy, Pyplot, PIL, argparse, Jupyter, and common Python built-in libraries.
 
-
+## Acknowledgements
+Guidance was provided by Udacity.
