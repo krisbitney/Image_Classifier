@@ -18,6 +18,7 @@ The model was trained using a negative log likelihood loss metric (i.e. maximum 
 #### First application: train.py
 The first application creates and trains an image classification neural network and includes options to adjust the network architecture and hyperparameters. To open the application, run "train.py" in the terminal.
 
+```
 usage: train.py [-h] [--val_dir VAL_DIR] [--save_dir SAVE_DIR] [--gpu]
                 [--arch ARCH] [--learn_rate LEARN_RATE]
                 [--hidden_units LAYERS] [--classes OUTPUT_SIZE]
@@ -45,10 +46,12 @@ optional arguments:
                         number of categories to classify
   --epochs EPOCHS       number of training epochs
   --early_stop          keep checkpoint with minimum validation loss
+```
 
 #### Second application: predict.py
 The second application predicts image class probabilities using a trained neural network that was created and trained with "train.py". To open the application, "predict.py" in the terminal.
 
+```
 usage: predict.py [-h] [--gpu] [--top_k TOPK]
                   [--category_names CATEGORY_NAMES]
                   image checkpoint
@@ -66,7 +69,8 @@ optional arguments:
   --category_names CATEGORY_NAMES
                         filepath to json dictionary linking unique integer
                         values to category names
-                        
+```
+                     
  ## Required libraries                       
 This project uses PyTorch, Numpy, Pyplot, PIL, argparse, Jupyter, and common Python built-in libraries.
 
